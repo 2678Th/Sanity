@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
   preloader.innerHTML = `
     <div class="fixed inset-0 z-50 flex items-center justify-center bg-white bg-opacity-95">
       <div class="flex flex-col items-center">
-        <img src="../img/sanity-logo.svg" alt="Sanity Logo" class="h-16 w-16 mb-4 animate-bounce">
+        <img src="img/sanity-logo.svg" alt="Sanity Logo" class="h-16 w-16 mb-4 animate-bounce">
         <div class="loader mb-2"></div>
         <span class="text-brown-900 text-xl font-bold tracking-wide">Loading Sanity...</span>
       </div>
@@ -27,3 +27,4 @@ document.addEventListener('DOMContentLoaded', function() {
     }, 400); // Show for at least 400ms
   });
 });
+
