@@ -1,0 +1,13 @@
+/* Custom styles for Sanity Old Age Home */
+body {
+    font-family: 'Inter', sans-serif;
+}
+/* Brown color palette for custom utility classes */
+.bg-brown-100 { background-color: #e7d3c1; }
+.bg-brown-200 { background-color: #c8a47a; }
+.bg-brown-900 { background-color: #7c4a1e; }
+.text-brown-900 { color: #7c4a1e; }
+.text-brown-700 { color: #a97442; }
+.border-brown-100 { border-color: #e7d3c1; }
+.border-brown-200 { border-color: #c8a47a; }
+.border-brown-900 { border-color: #7c4a1e; }
