@@ -1,25 +1,26 @@
-// Automated background image slider for header
+// Automated header background image slider for Home page
 const images = [
-    'img/home1.jpg',
-    'img/home2.jpg',
-    'img/home3.jpg'
+    '../img/african-social-worker-helping-senior-woman.jpg',
+    '../img/book-wall-1151405_640.jpg',
+    '../img/dementia-8734695_640.jpg',
+    '../img/full-shot-senior-couple-with-cat-home.jpg',
+    '../img/fun-activities-in-old-age-home.png',
+    '../img/house-217260_640.jpg',
+    '../img/nurse-taking-care-elderly-patient.jpg',
+    '../img/OIP.webp',
+    '../img/Old-Age-Home-Delhi.jpg',
+    '../img/portrait-middle-aged-businesswoman.jpg'
 ];
 let current = 0;
-const header = document.getElementById('header-slider');
-
+const headerBg = document.getElementById('header-bg');
 function setHeaderBg() {
-    header.style.backgroundImage = `url('${images[current]}')`;
-    header.style.backgroundSize = 'cover';
-    header.style.backgroundPosition = 'center';
-    header.style.transition = 'background-image 1s ease-in-out';
+    headerBg.style.backgroundImage = `url('${images[current]}')`;
+    headerBg.style.backgroundSize = 'cover';
+    headerBg.style.backgroundPosition = 'center';
+    headerBg.style.filter = 'blur(2px)';
 }
-
-function nextImage() {
+setHeaderBg();
+setInterval(() => {
     current = (current + 1) % images.length;
     setHeaderBg();
-}
-
-if (header) {
-    setHeaderBg();
-    setInterval(nextImage, 4000);
-}
+}, 3500);
